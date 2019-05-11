@@ -9,9 +9,7 @@ def position_taken?(board, index)
 end
 
 def valid_move?(board, index)
-  if board[index] == empty
-    true
-  else position_taken? == true || index.between(0, 8)
+  if position_taken? == true || index.between(0, 8)
     nil
   end
 end
